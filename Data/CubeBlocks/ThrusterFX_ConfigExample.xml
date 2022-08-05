@@ -61,7 +61,7 @@
                     VelocityScalingFrom: -1;
                     VelocityScalingTo: 2;
                     Dummies : thruster_flame_01;
-                    =
+                    
                     "/>
                     
                     
@@ -110,10 +110,11 @@
                     VelocityScalingFrom: -1;
                     VelocityScalingTo: 2;
                     Dummies : thruster_flame_01;
-                    =
+                    
                     "/>
                     
                     
                 </Group>
             </ModExtensions>
   </Definition>
+  </Definitions>
