@@ -46,6 +46,7 @@
                     OffsetScaling : 1;
                     VelocityScalingFrom : -1;
                     VelocityScalingTo : 2;
+                    CullingTime:90;
                     Dummies : thruster_flame;
                     
                     =
@@ -58,6 +59,7 @@
                     Offset : 2;                    
                     VelocityScalingFrom : -1;
                     VelocityScalingTo : 2;
+                    CullingTime:90;
                     Dummies : thruster_flame;
                     =
                     Particle : p_ExampleRed;
@@ -69,6 +71,7 @@
                     Offset : 2;                       
                     VelocityScalingFrom : -1;
                     VelocityScalingTo : 2;
+                    CullingTime:90;
                     Dummies : thruster_flame;
                     =
                     Particle : p_ExampleGreen;
@@ -80,6 +83,7 @@
                     Offset : 2;                    
                     VelocityScalingFrom : -1;
                     VelocityScalingTo : 2;
+                    CullingTime:90;
                     Dummies : thruster_flame;
                     
                     

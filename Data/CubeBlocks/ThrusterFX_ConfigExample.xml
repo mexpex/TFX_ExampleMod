@@ -61,7 +61,7 @@
                     VelocityScalingFrom: -1;
                     VelocityScalingTo: 2;
                     Dummies : thruster_flame_01;
-                    
+                    CullingTime:90;
                     "/>
                     
                     
