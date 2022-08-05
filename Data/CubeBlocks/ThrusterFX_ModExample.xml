@@ -1,0 +1,95 @@
+﻿<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  
+ 
+
+  <Definition xsi:type="MyObjectBuilder_ThrustDefinition"><!-- LargeBlockLargeHydrogenThrust -->
+    <Id>
+      <TypeId>Thrust</TypeId>
+      <SubtypeId>MwiTestLargeBlockSmallHydrogenThrust</SubtypeId>
+    </Id>
+    <!-- Normal Keen Properties 
+    ...
+    -->
+    <ModExtensions>
+                <ModComponents>
+                    <GameLogicComponent Name="MwiComponent" />
+                </ModComponents>
+                <Group Name="ThrusterCompData">
+                    
+                  <Text Name="ID" Value= "MwiTestLargeBlockSmallHydrogenThrust"/> <!--REQUIRED! No specific value required Debugging  -->
+                  <Boolean Name="hideVanillaFlame" Value="true" /><!-- Hide Vanilla Flame-->
+                  <Decimal Name="ThrustRateGain" Value="0.12" />
+                  <Decimal Name="ThrustRateLoss" Value="0.3" />
+                  <Boolean Name="UseEmissive" Value="false" /> <!-- Enable heatup/emissive material effect, off = more performant -->
+                  
+                  <Text Name="EmissiveMaterial" Value="heatup" /><!-- custom material for emissive that react to thrust -->
+                  <Decimal Name="EmissiveRateGain" Value="0.005" />
+                  <Decimal Name="EmissiveRateLoss" Value="0.01" />
+
+                  
+                  <!-- 
+                  Between setups '=' 
+                  Between parameters or commments ';'
+                  Between parameter name and value ':'  
+                  -->
+
+                  <Text Name="EmitterSetup" Value="
+                    
+                    You can add comments like this and end it with -> ;
+                    Particle : p_FlameTemplate;
+                    Type : SPRITE;
+                    AtmoOnly : FALSE ;
+                    ThrustMin : 0.01;
+                    ThrustMax : 1;
+                    Size : 0.2;
+                    Offset : 0;
+                    OffsetScaling : 1;
+                    VelocityScalingFrom : -1;
+                    VelocityScalingTo : 2;
+                    Dummies : thruster_flame;
+                    
+                    =
+                    Particle : p_ExampleBlue;
+                    Type : PARTICLE;
+                    AtmoOnly: TRUE ;
+                    ThrustMin : 0.01;
+                    ThrustMax : 0.3;
+                    Size : 0.4;
+                    Offset : 2;                    
+                    VelocityScalingFrom : -1;
+                    VelocityScalingTo : 2;
+                    Dummies : thruster_flame;
+                    =
+                    Particle : p_ExampleRed;
+                    Type : PARTICLE;
+                    AtmoOnly: TRUE ;
+                    ThrustMin : 0.3;
+                    ThrustMax : 0.7;
+                    Size : 0.4;
+                    Offset : 2;                       
+                    VelocityScalingFrom : -1;
+                    VelocityScalingTo : 2;
+                    Dummies : thruster_flame;
+                    =
+                    Particle : p_ExampleGreen;
+                    Type : PARTICLE;
+                    AtmoOnly : TRUE ;
+                    ThrustMin : 0.7;
+                    ThrustMax : 1.0;
+                    Size : 0.4;
+                    Offset : 2;                    
+                    VelocityScalingFrom : -1;
+                    VelocityScalingTo : 2;
+                    Dummies : thruster_flame;
+                    
+                    
+                                       
+                    "/>
+                    
+                    
+                </Group>
+            </ModExtensions>
+  </Definition>
+
+
+</Definitions>

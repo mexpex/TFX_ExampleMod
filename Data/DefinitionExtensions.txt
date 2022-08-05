@@ -1,0 +1,2 @@
+CubeBlocks\ThrusterFX_ModExample.xml
+CubeBlocks\ThrusterFX_ConfigExample.xml

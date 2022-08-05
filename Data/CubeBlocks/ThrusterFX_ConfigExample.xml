@@ -1,0 +1,119 @@
+﻿<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  
+  
+  
+
+  <!-- All settings -->
+  <Definition xsi:type="MyObjectBuilder_ThrustDefinition"><!-- AllSettingExample -->
+    <Id>
+      <TypeId>Thrust</TypeId>
+      <SubtypeId>AllSettingExample</SubtypeId>
+    </Id>
+    <!-- Normal Keen Properties 
+    ...
+    -->
+    <ModExtensions>
+                <ModComponents>
+                    <GameLogicComponent Name="MwiComponent" />
+                </ModComponents>
+                <Group Name="ThrusterCompData">
+                    
+                    <Text Name="ID" Value= "AllSettingExample"/> <!--REQUIRED! No specific value required Debugging  -->
+                    <Boolean Name="hideVanillaFlame" Value="true" /><!-- Hide Vanilla Flame-->
+                    <Decimal Name="ThrustRateGain" Value="0.2" />
+                    <Decimal Name="ThrustRateLoss" Value="0.67" />
+                    <Boolean Name="UseEmissive" Value="true" /> <!-- Enable heatup/emissive material effect, off = more performant -->
+                    
+                    <Text Name="EmissiveMaterial" Value="heatup" /><!-- custom material for emissive that react to thrust -->
+                    <Decimal Name="EmissiveRateGain" Value="0.005" />
+                    <Decimal Name="EmissiveRateLoss" Value="0.01" />
+                   
+                    
+                    <!-- 
+                  Between setups '=' 
+                  Between parameters or commments ';'
+                  Between parameter name and value ':'  
+                  -->
+
+                    <Text Name="EmitterSetup" Value="
+                    You can add comments like this and end it with -> ;
+
+                    Particle : particle1;
+                    Type: SPRITE;
+                    AtmoOnly: FALSE ;
+                    ThrustMin : 0.01;
+                    ThrustMax : 1;
+                    Size:0.1;
+                    Offset:-0.25;
+                    OffsetScaling:1.5;
+                    VelocityScalingFrom: -1;
+                    VelocityScalingTo: 2;
+                    Dummies : thruster_flame_01;
+                    =
+                    Particle : particle2;
+                    Type: SPRITE;
+                    AtmoOnly: FALSE ;
+                    ThrustMin : 0.01;
+                    ThrustMax : 1;
+                    Size:0.1;
+                    Offset:-0.25;
+                    OffsetScaling:1.5;
+                    VelocityScalingFrom: -1;
+                    VelocityScalingTo: 2;
+                    Dummies : thruster_flame_01;
+                    =
+                    "/>
+                    
+                    
+                </Group>
+            </ModExtensions>
+  </Definition>
+
+<!-- Simple when just using particles -->
+    <Definition xsi:type="MyObjectBuilder_ThrustDefinition"><!-- MinimalSettingExample -->
+    <Id>
+      <TypeId>Thrust</TypeId>
+      <SubtypeId>MinimalSettingExample</SubtypeId>
+    </Id>
+    <!-- Normal Keen Properties 
+    ...
+    -->
+    <ModExtensions>
+                <ModComponents>
+                    <GameLogicComponent Name="MwiComponent" />
+                </ModComponents>
+                <Group Name="ThrusterCompData">
+                    
+                    <Text Name="ID" Value= "MinimalSettingExample"/> <!--REQUIRED! No specific value required Debugging  -->
+                    <Boolean Name="hideVanillaFlame" Value="true" /><!-- Hide Vanilla Flame-->
+                    
+                    <!-- 
+                  Between setups '=' 
+                  Between parameters or commments ';'
+                  Between parameter name and value ':'  
+                  -->
+
+
+
+                    <Text Name="EmitterSetup" Value="
+
+                    SHould be minimal setup for just normal particle smoke ;
+
+
+
+                    Particle : myParticleName;
+                    AtmoOnly: FALSE ;
+                    ThrustMin : 0.01;
+                    ThrustMax : 1;
+                    Size:0.1;
+                    Offset:0;
+                    VelocityScalingFrom: -1;
+                    VelocityScalingTo: 2;
+                    Dummies : thruster_flame_01;
+                    =
+                    "/>
+                    
+                    
+                </Group>
+            </ModExtensions>
+  </Definition>
