@@ -39,7 +39,7 @@
                     You can add comments like this and end it with -> ;
 
                     Particle : particle1;
-                    Type: SPRITE;
+                    Type: PARTICLE;
                     AtmoOnly: FALSE ;
                     ThrustMin : 0.01;
                     ThrustMax : 1;
@@ -51,7 +51,7 @@
                     Dummies : thruster_flame_01;
                     =
                     Particle : particle2;
-                    Type: SPRITE;
+                    Type: PARTICLE;
                     AtmoOnly: FALSE ;
                     ThrustMin : 0.01;
                     ThrustMax : 1;
